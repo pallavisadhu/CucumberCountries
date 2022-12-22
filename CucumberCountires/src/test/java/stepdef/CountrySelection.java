@@ -1,9 +1,7 @@
 package stepdef;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.List;
-import java.util.Random;
 
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
@@ -38,8 +36,7 @@ public class CountrySelection {
 	public void the_user_choose_a_random_number() throws Throwable {
 		
 		int len = countryList.size();
-		Random r = new Random();
-		index = r.nextInt(len);
+		index = (int)(Math.random()*len);
 		
 	}
 
